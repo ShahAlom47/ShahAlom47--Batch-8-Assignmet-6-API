@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="CSS/style.css">
+    <title>PH Tube</title>
+</head>
+<body class=" max-w-5xl m-auto px-10">
+
+    <header >
+        <nav >
+
+            <div class="navbar bg-base-100 my-4  flex flex-col md:flex-row lg:flex-row  ">
+                <div class=" my-4 navbar-start lg:w-6/12 flex justify-center lg:justify-start md:justify-start">
+                  <a class="btn btn-ghost "> <img src="image/Logo.png" alt=""> </a>
+                </div>
+                <div class=" my-4 navbar-center flex-1 flex gap-2 justify-between ">
+                    <button id="sort-Btn" class="btn btn-sm btn-error">Sort By View</button>
+                    <button class=" btn btn-sm btn-error ">Blog</button>
+                </div>
+               
+              </div>
+              <hr>
+        </nav>
+    </header>
+<main>
+    <div id="btn-container" class=" flex gap-1 lg:gap-2 justify-center items-center py-3">
+
+    </div>
+
+
+    <!-- Loading ..... -->
+    <div id="Loading" class=" flex gap-2 justify-center items-center py-40 hidden ">
+
+        <span class="loading loading-spinner text-error"> </span>
+        <p>Loading....</p>
+
+    </div>
+
+    <!-- error  -->
+    <div id="error-continer" class=" flex flex-col justify-center items-center my-16 mx-auto hidden">
+        <img src="image/Icon.png" alt="">
+       <h1 class="text-center font-bold text-xl">Oops!! Sorry, <br> There is no content here</h1>
+   </div>
+
+
+   <!-- card container  -->
+    <div id="card-container" class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">  
+    <!-- card container      -->
+    </div>
+
+
+
+</main>
+
+
+    <script src="JS/index.js"></script>
+</body>
+</html>
